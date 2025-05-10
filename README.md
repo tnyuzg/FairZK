@@ -90,6 +90,12 @@ total success
 which presents whether the verifier accepts the proof
 
 ``fairzk/sumcheck`` contains sumcheck protocol taken from [arkwork](https://github.com/arkworks-rs/sumcheck).
+
+
 ``fairzk/piop`` contains PIOPs for different components, such as spectral norm. ``fairzk/piop/total`` combines all the components.
+
+
 ``fairzk/snark`` contains usable SNARKs by compiling PIOPs with PCS.
+
+
 ``models`` contains quantized parameters of multiple models. You can modify the file paths in `/fairzk/examples/total.rs` to evaluate the peformance on different models.
