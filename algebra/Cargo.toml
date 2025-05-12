@@ -20,20 +20,9 @@ bincode = { workspace = true }
 itertools = { workspace = true }
 serde = {workspace = true }
 
-
-
-
 [dev-dependencies]
 criterion = { workspace = true }
 rand_chacha = { workspace = true }
-
-[[bench]]
-name = "modulus_bench"
-harness = false
-
-[[bench]]
-name = "sample"
-harness = false
 
 [package.metadata.docs.rs]
 all-features = true

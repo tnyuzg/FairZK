@@ -43,7 +43,6 @@ pub mod total_snark;
 pub mod inference_snark;
 pub mod l2_norm_snark;
 
-pub mod bound_snark;
 
 pub use infairence_snark::InfairenceSnark;
 pub use lookup_snark::LookupSnark;
@@ -51,7 +50,6 @@ pub use lookup_snark::LookupSnark;
 pub mod vector_lookup_snark;
 pub use vector_lookup_snark::VectorLookupSnark;
 
-pub use bound_snark::BoundSnark;
 pub use l2_norm_snark::L2NormSnark;
 pub use meta_disparity_snark::MetaDisparitySnark;
 pub use spectral_norm_snark::SpectralNormSnark;

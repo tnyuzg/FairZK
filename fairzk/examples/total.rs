@@ -4,9 +4,6 @@ use fairzk::pcs::OracleTable;
 use fairzk::piop::total::TotalInstance;
 use fairzk::read_params::{gen_matrix_from_params, gen_vector_from_params};
 use fairzk::snark::total_snark::TotalSnark;
-use fairzk::utils::{
-    random_absolute_u64_vec, random_normalized_w, random_positive_u64_vec, u64_to_field, vec_to_named_poly
-};
 use pcs::utils::code::{ExpanderCode, ExpanderCodeSpec};
 use sha2::Sha256;
 

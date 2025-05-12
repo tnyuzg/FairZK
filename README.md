@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for FAIRZK, accepted at IEEE S&P 2025.
+This repository contains the code for [FairZK](https://www.computer.org/csdl/proceedings-article/sp/2025/223600d219/26hiVnyjtrq), accepted at [IEEE S&P 2025](https://www.ieee-security.org/TC/SP2025/).
 
 FairZK designs a specialized SNARK protocol to prove the fairness bound of a DNN model from its parameters and some aggregated information of the input without doing real inference.
 
@@ -89,13 +89,14 @@ total success
 
 which presents whether the verifier accepts the proof
 
-``fairzk/sumcheck`` contains sumcheck protocol taken from [arkwork](https://github.com/arkworks-rs/sumcheck).
-
 
 ``fairzk/piop`` contains PIOPs for different components, such as spectral norm. ``fairzk/piop/total`` combines all the components.
 
-
 ``fairzk/snark`` contains usable SNARKs by compiling PIOPs with PCS.
 
-
 ``models`` contains quantized parameters of multiple models. You can modify the file paths in `/fairzk/examples/total.rs` to evaluate the peformance on different models.
+
+### Acknowledgements
+
+The implementation of ``algebra`` is based on the following libraries: [arkwork](https://github.com/arkworks-rs/sumcheck), [plonky3](https://github.com/Plonky3/Plonky3), [primus-fhe](https://github.com/primus-labs/primus-fhe).
+The implementation of ``fairzk/sumcheck`` is based on [arkwork](https://github.com/arkworks-rs/sumcheck).
